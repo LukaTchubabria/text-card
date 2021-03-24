@@ -79,6 +79,11 @@ btn.addEventListener('click', (e) => {
         listBlock.appendChild(blockPara);
         blockPara.classList.add('block-p')
 
+        //text
+        const boxIcon = document.createElement('div');
+        listBlock.appendChild(boxIcon);
+        boxIcon.classList.add('down-icon');
+
         //add name
         blockPara.textContent = textname.value;
 
@@ -90,7 +95,7 @@ btn.addEventListener('click', (e) => {
         //text
         const boxPara = document.createElement('p');
         collapsBlock.appendChild(boxPara);
-        boxPara.classList.add('box-p')
+        boxPara.classList.add('box-p');
 
         boxPara.textContent = text.value;
 
@@ -100,11 +105,14 @@ btn.addEventListener('click', (e) => {
         deleteBtn.textContent = "delete";
         deleteBtn.classList.add('delete-btn')
 
+
             
         //------------------------\\
                 //Collapsibles\\
         //------------------------\\
-        const coll = document.querySelectorAll(".list-btn");
+
+
+        const coll = document.getElementsByClassName("list-btn");
 
         for (let i = 0; i < coll.length; i++) {
         coll[i].addEventListener("click", 

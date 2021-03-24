@@ -131,6 +131,17 @@ body .container .list .list-btn {
   background: #EBEBEB;
   border-radius: 15px 15px 5px 5px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 11px;
+}
+
+body .container .list .list-btn .down-icon {
+  background-image: url(../img/icon/icon.svg);
+  background-size: contain;
+  width: 41px;
+  height: 20px;
 }
 
 body .container .list .list-btn .block-p {
