@@ -1,0 +1,131 @@
+@import "var";
+
+body {
+    width: 100%;
+    background-color: $bg;
+
+    .bg {
+        background-image: url(../img/bg.svg);
+        height: 100vh;
+        width: 100vw;
+        background-size: contain;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+    }
+    .container {
+        width: 94vw;
+        margin: 0 auto;
+
+        .header-box {
+            position: absolute;
+            z-index: 1;
+            opacity: 40%;
+            background-color: $light-blue;
+            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px 10px 0px 0px;
+            width: inherit;
+            height: 70px;
+            top: 15px;
+        }
+        .content-box {
+            margin: 50px auto 60px auto;
+            padding-bottom: 20px;
+            width: 90%;
+            box-shadow: inset 0px 5px 18px rgba(197, 255, 251, 0.2);
+            border-radius: 0px 0px 20px 20px;
+            background-color: rgba(103, 103, 103, 0.4);
+
+            form {
+                padding-top: 55px;
+                
+                .text {
+                    width: 226px;
+                    height: 44px;
+                    background: rgba(255, 255, 255, 0.7);
+                    border-radius: 5px;
+                }
+                input {
+                    margin: 0 auto;
+                    display: block;
+                    
+                }
+                #submit {
+                    width: 151px;
+                    height: 44px;
+                    background: #EBEBEB;
+                    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.2);
+                    border-radius: 5px;
+                }
+                textarea, #submit {
+                    margin: 20px auto 0 auto;
+                    display: block;
+                }
+                textarea, #name::placeholder {
+                    @include font(18px, Sansation, rgba(0, 0, 0, 0.4));
+                }
+                #submit {
+                    @include font(24px, Roboto-Medium, $grey-text);
+                }
+            }
+            #main-text {
+                margin: 40px 0 10px 0;
+                text-align: center;
+                @include font (48px, Sansation, #fff);
+            }
+            #description-text {
+                text-align: center;
+                @include font (24px, Sansation, #fff);
+                opacity: 80%;
+                padding-bottom: 45px;
+            }
+        }
+        .list {
+            margin: 15px auto 15px auto;
+            position: relative;
+
+            .list-btn {
+                display: block;
+                width: 229px;
+                height: 44px;
+                background: $block;
+                border-radius: 15px 15px 5px 5px;
+                margin: 0 auto;
+
+                .block-p {
+                    width: 170px;
+                    margin-left: 10px;
+                    font-weight: 300;
+                    font-size: 18px;
+                    overflow: hidden;
+                    @include font(18px, Roboto, #0A0A0A);
+                    text-align: left;
+                }
+            }
+            .collaps {
+                width: 219px;
+                background: #D7D7D7;
+                margin: 0 auto;
+                border-radius: 0 0 10px 10px;
+
+                .box-p {
+                    padding: 10px 10px 20px 10px;
+                    @include font (16px, Roboto, #0A0A0A)
+                }
+                .delete-btn {
+                    background-color: rgba(0, 0, 0, 0);
+                    @include font (18px, Roboto-Medium, $delete);
+                    margin: 0 auto;
+                    display: block;
+                    padding: 5px 10px;
+                }
+            }
+        }
+        
+    }
+}
+@media(min-width: 800px) {
+
+}
+ 

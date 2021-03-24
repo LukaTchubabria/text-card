@@ -1,0 +1,16 @@
+$bg: #2C2C2C;
+$light-blue: #00FFFF;
+$grey: #676767;
+$block: #EBEBEB;
+$text-box: #D7D7D7;
+$delete: #FF3333;
+$grey-text: #484848;
+
+
+//Font Mixin
+
+@mixin font($s, $f, $c) {
+    font-size: $s;
+    font-family: $f;
+    color: $c;
+}
