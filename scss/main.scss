@@ -125,7 +125,9 @@ body {
         
     }
 }
-@media(min-width: 800px) {
-
+@media (max-width: 800px) {
+    .text {
+        width: 473px;
+    }
 }
  
