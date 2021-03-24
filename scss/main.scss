@@ -108,10 +108,12 @@ body {
                 background: #D7D7D7;
                 margin: 0 auto;
                 border-radius: 0 0 10px 10px;
+                display: none;
 
                 .box-p {
                     padding: 10px 10px 20px 10px;
-                    @include font (16px, Roboto, #0A0A0A)
+                    @include font (16px, Roboto, #0A0A0A);
+                    white-space: break-spaces;
                 }
                 .delete-btn {
                     background-color: rgba(0, 0, 0, 0);

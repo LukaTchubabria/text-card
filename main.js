@@ -99,7 +99,28 @@ btn.addEventListener('click', (e) => {
         collapsBlock.appendChild(deleteBtn);
         deleteBtn.textContent = "delete";
         deleteBtn.classList.add('delete-btn')
+
+            
+        //------------------------\\
+                //Collapsibles\\
+        //------------------------\\
+        const coll = document.querySelectorAll(".list-btn");
+
+        for (let i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", 
+        function() {
+            this.classList.toggle("active");
+            var collaps = this.nextElementSibling;
+            if (collaps.style.display === "block") {
+                collaps.style.display = "none";
+            } else {
+            collaps.style.display = "block";
+            }
+        });
+        }
     }
+
+    //delete btn
     const deletebtn = document.querySelectorAll('.delete-btn');
     for(let i = 0; i < deletebtn.length; i++){
         deletebtn[i].addEventListener('click', ()=>{
